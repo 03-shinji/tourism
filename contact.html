@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="wrapper">
+            <div class="logo"><a href="#">!ncredible India</a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+              <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="transportation.html">Transportation Guide</a></li>
+              <li>
+                <a href="destinations.html" class="desktop-item">Key Destinations</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Key Destinations</label>
+                <ul class="drop-menu">
+                  <li><a href="destinations.html">Red Fort</a></li>
+                  <li><a href="destinations.html">Taj Mahal</a></li>
+                  <li><a href="destinations.html">Qutub Minar</a></li>
+                  <li><a href="destinations.html">Gateway of India</a></li>
+                  <li><a href="destinations.html">Many More</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+          </div>
+        </nav>
+      </header>
+      <br>
+      <hr>
+      <h2>Contact Us</h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname"><b>First Name</b></label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname"><b>Last Name</b></label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country"><b>Gender</b></label>
+    <select id="country" name="country">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="others">Others</option>
+    </select>
+
+    <label for="email"><b>Email</b></label>
+   <input type="text" placeholder="Enter Email" name="email" required>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+      <footer>
+        <ul>
+            <li>Arpita Singh</li>
+            <li>BCA 'A' second semester</li>
+            <li>Amity University Patna </li>
+        </ul>
+      </footer>
+</body>
+</html>

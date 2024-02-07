@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism in India</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#">!ncredible India</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="transportation.html">Transportation</a></li>
+            <li>
+              <a href="destinations.html" class="desktop-item">Key Destinations</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Key Destinations</label>
+              <ul class="drop-menu">
+                <li><a href="destinations.html">Red Fort</a></li>
+                <li><a href="destinations.html">Taj Mahal</a></li>
+                <li><a href="destinations.html">Qutub Minar</a></li>
+                <li><a href="destinations.html">Gateway of India</a></li>
+                <li><a href="destinations.html">Many More</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+    </header>
+    <br>
+    <hr>
+    <section class="slider">
+      <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <img src="B1m4O1v.webp" style="width:1700px", height="500px">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="n2paec5.png" style="width:1700px", height="500px">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="y1UH6zu.png" style="width:1700px", height="500px">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+</section>
+<div id="home">
+  <img src="in.png" alt="">
+  <p><center>   One of the oldest civilisations in the world, India is a mosaic of multicultural experiences. With a rich heritage and myriad attractions, the country is among the most popular tourist destinations in the world. It covers an area of 32, 87,263 sq. km, extending from the snow-covered Himalayan heights to the tropical rain forests of the south. As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct geographical entity.
+
+Fringed by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west. As you travel the expanse of the country, you are greeted by diverse nuances of cuisines, faiths, arts, crafts, music, nature, lands, tribes, history and adventure sports. India has a mesmeric conflation of the old and the new. As the bustling old bazaars rub shoulders with swanky shopping malls, and majestic monuments accompany luxurious heritage hotels, the quintessential traveller can get the best of both worlds. Head to the mountains, enjoy a beach retreat or cruise through the golden Thar, India has options galore for all.</center> 
+  </p>
+</div>
+<footer>
+  <ul>
+      <li>Arpita Singh</li>
+      <li>BCA 'A' second semester</li>
+      <li>Amity University Patna </li>
+  </ul>
+</footer>
+</body>
+</html>
